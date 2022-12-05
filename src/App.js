@@ -4,8 +4,30 @@ import Footer from'./components/layout/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
+import { useState, useEffect } from 'react'
 
 function App() {
+
+
+
+  // useEffect(() => {
+  //   const getPhotos = async () => {
+  //     const photos = fetchPhotos()
+  //     setPhotos(photos)
+  //   }
+
+  //   getPhotos()
+  // }, [])
+
+  
+  // const fetchPhotos = async () => {
+  //     const res = await fetch('https://enthusiastic-crab-windbreaker.cyclic.app/api/')
+  //     const data = await res.json()
+  //     console.log(data)
+  //     return data
+  // }
+
+
   return (
     <Router>
       <div className="flex flex-col justify-between h-screen">
