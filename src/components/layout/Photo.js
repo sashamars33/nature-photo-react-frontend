@@ -25,7 +25,7 @@ const Photo = () => {
 
   return (
     <section className="py-5 flex flex-wrap items-center">
-        {loading === true ? <p className="w-full text-4xl text-center">Loading..</p> : <img src={photo.image} alt = {photo.caption} className="rounded-lg shadow-lg w-full h-3/5 lg:h-screen" style = {{ width: '100%', height: '50vh', objectFit: 'cover', filter: effects}}></img>}
+        {loading === true ? <p className="w-full text-4xl text-center">Loading..</p> : <img src={photo.image} alt = {photo.caption} className="rounded-lg shadow-lg w-full" style = {{ width: '100%', height: '50vh', objectFit: 'cover', filter: effects}}></img>}
         <div className="btn btn-rounded bg-info border-transparent text-neutral my-5 w-fill m-auto" onClick={refreshPage}>Generate!</div>
         <section className="py-10 my-5 bg-neutral rounded-lg shadow-lg w-full">
         <ul className="flex justify-around flex-wrap sm:gap-2">
